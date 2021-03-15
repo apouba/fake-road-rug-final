@@ -14,9 +14,12 @@
     .rug {
       width: 600px;
       height: 300px;
-      background: green;
+      background: grey;
       position: fixed;
-      transform: translate(50%, 50%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
     }
     
     .road1 {
@@ -24,18 +27,16 @@
       height: 40px;
       background: grey;
       position: fixed;
-      top: 10px;
+      left: 40px;
+      border-radius: 0px 30px 0px 0px; 
     }
     
-    .road2 {
-      width: 100px;
-      height: 40px;
-      background: grey;
+    .road1_grass {
+      background: green;
+      height: 30px;
+      width: 40px;
       position: fixed;
-      top: 40px;
-      left: 70px;
-      transform: rotate(90deg);
-      border-radius: 30px 0px 0px 0px; 
+      left: 100px;
     }
     
     .curve1 {
@@ -44,28 +45,60 @@
       background: green;
       position: fixed;
       top: 40px;
-/*       left: 70px; */
       border-radius: 0px 30px 0px 0px;
     }
     
-    .road3 {
-      width: 100px;
-      height: 40px;
+    .curve2 {
+      width: 80px;
+      height: 120px;
+      background: green;
+      position: fixed;
+      left: 140px;
+      top: 0px;
+      border-radius: 0px 0px 0px 30px;
+    }
+    
+     .curve3 {
+      width: 80px;
+      height: 130px;
+      background: green;
+      position: fixed;
+      left: 140px;
+      top: 170px;
+      border-radius: 30px 0px 0px 30px;
+    }
+    
+    .outerCircle {
+      width: 150px;
+      height: 150px;
       background: grey;
       position: fixed;
-      top: 109px;
-      left: 110px;
-      border-radius: 0px 0px 0px 30px; 
+      border-radius: 150px;
+      top: 70px;
+      left: 200px;
+    }
+    
+    .innerCircle {
+       width: 80px;
+      height: 80px;
+      background: green;
+      position: fixed;
+      border-radius: 150px;
+      top: 105px;
+      left: 235px;
     }
     
   </style>
   
   <body>
     <div class="rug">
+      <div class="road1_grass"></div>
       <div class="road1"></div>
-      <div class="road2"></div>
       <div class="curve1"></div>
-      <div class="road3"></div>
+      <div class="curve2"></div>
+      <div class="curve3"></div>
+      <div class="outerCircle"></div>
+      <div class="innerCircle"></div>
     
     </div>
   </body>
